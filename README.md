@@ -27,5 +27,3 @@ You will need a web browser to view the app.
 - The app will display the Pokémon's information if found.
 
 ![image](https://github.com/aurelatioukpe/my-pokedex/assets/146479577/0a265679-93d4-42ed-aed1-bff821ee6b5f)
-
-Go ahead, and as we say in French, ATTRAPEZ-LES TOUS ! ;)
