@@ -4,26 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Pokémon Search</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Pokédex</title>
 </head>
 <body>
-    <h1>MY POKEDEX</h1>
-    <input type="text" id="search-input" placeholder="Enter Pokémon name or ID">
-    <button id="search-button">Search</button>
+    <div class="pokedex-container">
+        <div class="pokedex-header">
+            <div class="pokedex-logo">
+                <div class="big-circle"></div>
+                <div class="small-circles">
+                    <div class="small-circle red"></div>
+                    <div class="small-circle yellow"></div>
+                    <div class="small-circle green"></div>
+                </div>
+            </div>
+            <h1>MY POKÉDEX</h1>
+        </div>
+        
+        <div class="search-container">
+            <div class="search-input-wrapper">
+                <input type="text" id="search-input" placeholder="Enter Pokémon name or ID...">
+                <div class="search-hint">IDs valides: 1 à 1025</div>
+            </div>
+            <button id="search-button">
+                <span class="button-text">Search</span>
+                <span class="pokeball-icon"></span>
+            </button>
+        </div>
 
-    <div>
-        <h2 id="pokemon-name"></h2>
-        <p id="pokemon-id"></p>
-        <p id="weight"></p>
-        <p id="height"></p>
-        <div id="types"></div>
-        <p id="hp"></p>
-        <p id="attack"></p>
-        <p id="defense"></p>
-        <p id="special-attack"></p>
-        <p id="special-defense"></p>
-        <p id="speed"></p>
-        <img id="sprite" src="" alt="">
+        <div id="notification" class="notification">
+            <div class="notification-content">
+                <div class="notification-icon">!</div>
+                <p id="notification-message"></p>
+            </div>
+            <button id="notification-close">&times;</button>
+        </div>
+
+        <div class="pokemon-card" id="pokemon-info">
+            <div class="pokemon-header">
+                <h2 id="pokemon-name"></h2>
+                <p id="pokemon-id"></p>
+            </div>
+            
+            <div class="pokemon-image-container">
+                <img id="sprite" src="" alt="">
+                <div class="image-reflection"></div>
+            </div>
+            
+            <div id="types" class="pokemon-types"></div>
+            
+            <div class="pokemon-details">
+                <div class="details-row">
+                    <div class="detail-item">
+                        <span class="detail-label">Weight</span>
+                        <span id="weight" class="detail-value"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Height</span>
+                        <span id="height" class="detail-value"></span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="stats-container">
+                <h3>Base Stats</h3>
+                <div class="stat-row">
+                    <span class="stat-label">HP</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar hp-bar" id="hp-bar"></div>
+                    </div>
+                    <span class="stat-value" id="hp"></span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">ATK</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar attack-bar" id="attack-bar"></div>
+                    </div>
+                    <span class="stat-value" id="attack"></span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">DEF</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar defense-bar" id="defense-bar"></div>
+                    </div>
+                    <span class="stat-value" id="defense"></span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">SP.ATK</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar special-attack-bar" id="special-attack-bar"></div>
+                    </div>
+                    <span class="stat-value" id="special-attack"></span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">SP.DEF</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar special-defense-bar" id="special-defense-bar"></div>
+                    </div>
+                    <span class="stat-value" id="special-defense"></span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">SPD</span>
+                    <div class="stat-bar-container">
+                        <div class="stat-bar speed-bar" id="speed-bar"></div>
+                    </div>
+                    <span class="stat-value" id="speed"></span>
+                </div>
+            </div>
+        </div>
+        
+        <footer class="pokedex-footer">
+            <p>Pokémon data provided by PokéAPI</p>
+            <p class="author-credit">Made by Aurel ATIOUKPE</p>
+        </footer>
     </div>
 
     <script src="script.js"></script>
