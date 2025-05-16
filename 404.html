@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>404 - Page Not Found | Pokédex</title>
+    <style>
+        .error-container {
+            text-align: center;
+            padding: 30px;
+            max-width: 500px;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 0 auto;
+        }
+
+        .error-title {
+            font-size: 4rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            text-shadow: 2px 2px var(--dark-color);
+        }
+
+        .error-subtitle {
+            font-size: 1.5rem;
+            color: var(--dark-color);
+            margin-bottom: 20px;
+        }
+
+        .error-message {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+
+        .error-image {
+            width: 200px;
+            height: 200px;
+            margin: 20px 0;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .home-button {
+            padding: 12px 25px;
+            background: linear-gradient(145deg, var(--primary-color), #b00020);
+            border: none;
+            border-radius: 25px;
+            color: white;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .home-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+    </style>
+</head>
+<body>
+    <div class="pokedex-container">
+        <div class="error-container">
+            <h1 class="error-title">404</h1>
+            <h2 class="error-subtitle">Pokémon Not Found!</h2>
+            <p class="error-message">Oh no! It seems like the Pokémon you're looking for has fled into the tall grass. This page doesn't exist in our Pokédex.</p>
+            
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png" alt="Confused Psyduck" class="error-image">
+            
+            <p class="error-message">Don't worry, even the best trainers get lost sometimes. Let's head back to the main Pokédex.</p>
+            
+            <a href="index.html" class="home-button">
+                Return to Pokédex
+                <span class="pokeball-icon"></span>
+            </a>
+        </div>
+        
+        <footer class="pokedex-footer">
+            <p>Pokémon data provided by PokéAPI</p>
+            <p class="author-credit">Made by Aurel ATIOUKPE</p>
+        </footer>
+    </div>
+</body>
+</html>
