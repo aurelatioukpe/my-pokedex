@@ -1,6 +1,6 @@
 # MY POKÉDEX
 
-![Pokédex Banner]![image](https://github.com/user-attachments/assets/3aa55246-c9f6-466d-a0d4-b23539223f75)
+![Pokédex Banner](https://github.com/user-attachments/assets/3aa55246-c9f6-466d-a0d4-b23539223f75)
 
 
 A modern and interactive Pokédex web application developed with HTML, CSS, and vanilla JavaScript. This application allows users to search for any Pokémon by ID or name and displays detailed information in an elegant and responsive interface.
@@ -24,7 +24,7 @@ The application is deployed and accessible at:
 
 ## 🖼️ Screenshots
 
-![Interface Screenshot]![image](https://github.com/user-attachments/assets/f892c89b-e9d6-4b3e-b66f-7d9fa2512044)
+![Interface Screenshot](https://github.com/user-attachments/assets/f892c89b-e9d6-4b3e-b66f-7d9fa2512044)
 
 
 ## 🛠️ Technologies Used
