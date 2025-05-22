@@ -114,6 +114,34 @@
                 </div>
             </div>
         </div>
+
+        <div class="versus-toggle-container">
+            <button id="versus-toggle" class="home-button versus-highlight">
+                <span class="versus-icon">⚔️</span> Mode Versus
+            </button>
+        </div>
+        <div id="versus-mode" style="display:none;">
+            <div class="versus-title"><span class="versus-icon">⚔️</span> Combat Versus</div>
+            <div class="versus-selection">
+                <div class="versus-pokemon">
+                    <div class="versus-card">
+                        <input type="text" id="versus-input-1" placeholder="Pokémon 1 (nom ou ID)">
+                        <button id="versus-search-1" class="home-button">Choisir</button>
+                        <div id="versus-info-1"></div>
+                    </div>
+                </div>
+                <div class="versus-vs-circle">VS</div>
+                <div class="versus-pokemon">
+                    <div class="versus-card">
+                        <input type="text" id="versus-input-2" placeholder="Pokémon 2 (nom ou ID)">
+                        <button id="versus-search-2" class="home-button">Choisir</button>
+                        <div id="versus-info-2"></div>
+                    </div>
+                </div>
+            </div>
+            <button id="versus-battle" class="home-button versus-battle-btn">Lancer le combat</button>
+            <div id="versus-result"></div>
+        </div>
         
         <footer class="pokedex-footer">
             <p>Pokémon data provided by PokéAPI</p>
